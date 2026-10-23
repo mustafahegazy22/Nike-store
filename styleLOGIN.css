@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(#111, #222);
+    height: 100vh;
+    width: 100%;
+    font-family: Arial;
+    /*  X يحطها في المركز من علي محور   */
+    display: flex;
+    justify-content: center;
+    /*  Y يحطها في المركز من علي محور   */
+    align-items: center;
+
+}
+
+body::after {
+    /*لازم تحطا عشان يشتغل*/
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+
+    clip-path: circle(30% at right 80%);
+}
+
+
+form {
+    width: 450px;
+    height: 390px;
+    border: 2px solid #00baff;
+
+    border-radius: 20px;
+    margin: 50px auto;
+
+}
+
+h2 {
+    color: rgb(199, 212, 217);
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial;
+}
+
+
+[type="email"],
+[type="password"] {
+    width: 250px;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border: 2px solid #00baff;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
+
+
+input[type="submit"] {
+    width: 100px;
+    height: 60px;
+    margin-left: 170px;
+    border: 1px solid #00baff;
+    border-radius: 50px;
+    color: #3d5c68;
+    font-size: 30px;
+    outline: none;
+}
+
+.login :hover {
+    width: 109px;
+    height: 63px;
+    border-radius: 47px;
+}
